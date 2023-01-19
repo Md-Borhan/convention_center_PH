@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,455 @@
     <title>Convention Center</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Default CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
+
 <body>
-    <h1>Hello</h1>
+
+    <!-- Start Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg container py-4">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-700 text-primary" href="#">
+                    <h4>Abacus Convention Center</h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-3">
+                            <a class="nav-link fw-medium text-primary" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link fw-medium text-primary" href="#">About</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link fw-medium text-primary" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link fw-medium text-primary">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-item1 vh-100 active">
+                    <div class="banner-text carousel-caption my-0 mx-auto mb-4">
+                        <h1>The perfect venue for your
+                            next event</h1>
+                        <p class="text-white fw-light px-4 d-none d-sm-block">Amet minim mollit non deserunt ullamco est
+                            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
+                        <a href="#" class="btn btn-light text-warning fw-bold">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item2 vh-100">
+                    <div class="banner-text carousel-caption my-0 mx-auto mb-4">
+                        <h1>The perfect venue for your
+                            next event</h1>
+                        <p class="text-white fw-light px-4 d-none d-sm-block">Amet minim mollit non deserunt ullamco est
+                            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
+                        <a href="#" class="btn btn-primary text-white">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item3 vh-100">
+                    <div class="banner-text carousel-caption my-0 mx-auto mb-4">
+                        <h1>The perfect venue for your
+                            next event</h1>
+                        <p class="text-white fw-light px-4 d-none d-sm-block">Amet minim mollit non deserunt ullamco est
+                            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
+                        <a href="#" class="btn btn-primary text-white">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item4 vh-100">
+                    <div class="banner-text carousel-caption my-0 mx-auto mb-4">
+                        <h1>The perfect venue for your
+                            next event</h1>
+                        <p class="text-white fw-light px-4 d-none d-sm-block">Amet minim mollit non deserunt ullamco est
+                            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
+                        <a href="#" class="btn btn-primary text-white">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Precious Section Start -->
+        <section class="precious-section transition-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center g-4 flex-column-reverse flex-md-row">
+                    <div class="col-12 col-md-6">
+                        <img src="./images/presious1.jpg" alt="" class="img-fluid rounded">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="precious-content position-relative">
+                            <h2 class="text-secondary fw-bold">Every moment is Precious</h2>
+                            <p class="fw-bold text-success">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                                do
+                                amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                                sunt nostrud amet.</p>
+                            <a href="#" class="btn btn-primary text-white rounded-0 px-4">Explore Our Album <i
+                                    class="fa-solid fa-arrow-right ms-1"></i></a>
+
+                            <div class="precious-toast toast position-absolute rounded-0 border-0" role="alert"
+                                aria-live="assertive" aria-atomic="true">
+                                <div
+                                    class="toast-header align-items-start border-start border-primary border-5 rounded-0 border-bottom-0">
+                                    <span class=""><i class="fa-solid fa-gift text-warning fa-2x me-2"></i>20% off on
+                                        next booking</span>
+                                    <button type="button" class="btn-close me-0 text-success fw-medium"
+                                        data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Precious Section End -->
+
+        <!-- Package Section Start -->
+        <section class="package-section">
+            <div class="container">
+                <div class="section-title text-center mb-5 pb-4">
+                    <h2 class="text-secondary fw-bold display-6 text-capitalize">Our package</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card mb-3 transition-5 border-0">
+                            <div class="card-body package-boxes py-5 px-3 rounded-5">
+                                <h5 class="price text-info fw-bold display-6">$300</h5>
+                                <h4 class="card-title text-info fw-bold my-3">Business fair</h4>
+                                <p class="card-text text-danger">For most businesses event
+                                    like book fair, craft fair.</p>
+                                <ul class="text-danger list-unstyled">
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>limited
+                                        space access</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Security
+                                        facility</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>event
+                                        support</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Decoration
+                                        design</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Per
+                                        day bill</li>
+                                </ul>
+                                <a href="#"
+                                    class="btn transition-5 bg-success-subtle rounded-pill fw-bold text-warning mx-auto d-block">Choose
+                                    plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card mb-3 transition-5 border-0">
+                            <div class="card-body package-boxes py-5 px-3 rounded-5">
+                                <h5 class="price text-info fw-bold display-6">$500</h5>
+                                <h4 class="card-title text-info fw-bold my-3">Wedding Basic</h4>
+                                <p class="card-text text-danger">For most businesses event
+                                    like book fair, craft fair.</p>
+                                <ul class="text-danger list-unstyled">
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>limited
+                                        space access</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Security
+                                        facility</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>event
+                                        support</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Decoration
+                                        design</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Per
+                                        day bill</li>
+                                </ul>
+                                <a href="#"
+                                    class="btn transition-5 bg-success-subtle rounded-pill fw-bold text-warning mx-auto d-block">Choose
+                                    plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card mb-3 transition-5 border-0">
+                            <div class="card-body package-boxes py-5 px-3 active position-relative rounded-5">
+                                <h5 class="price text-info fw-bold display-6">$800</h5>
+                                <h4 class="card-title text-info fw-bold my-3">Wedding Plus</h4>
+                                <p class="card-text text-danger">For most businesses event
+                                    like book fair, craft fair.</p>
+                                <ul class="text-danger list-unstyled">
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>limited
+                                        space access</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Security
+                                        facility</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>event
+                                        support</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Decoration
+                                        design</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Per
+                                        day bill</li>
+                                </ul>
+                                <a href="#"
+                                    class="btn transition-5 bg-success-subtle rounded-pill fw-bold text-warning mx-auto d-block">Choose
+                                    plan</a>
+                            </div>
+                            <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
+                                Hot
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card mb-3 transition-5 border-0">
+                            <div class="card-body package-boxes py-5 px-3 rounded-5">
+                                <h5 class="price text-info fw-bold display-6">$1200</h5>
+                                <h4 class="card-title text-info fw-bold my-3">Corporate event</h4>
+                                <p class="card-text text-danger">For most businesses event
+                                    like book fair, craft fair.</p>
+                                <ul class="text-danger list-unstyled">
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>limited
+                                        space access</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Security
+                                        facility</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>event
+                                        support</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Decoration
+                                        design</li>
+                                    <li class="mb-2"><i
+                                            class="fa-solid fa-check me-2 bg-primary-subtle text-warning p-1 rounded-pill"></i>Per
+                                        day bill</li>
+                                </ul>
+                                <a href="#"
+                                    class="btn transition-5 bg-success-subtle rounded-pill fw-bold text-warning mx-auto d-block">Choose
+                                    plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Package Section End -->
+
+        <!-- Start Client Review Section -->
+        <section class="client-review">
+            <div class="section-title text-center mb-5 pb-4">
+                <h2 class="text-secondary fw-bold display-6 text-capitalize">Happy Clients says</h2>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card text-center client-review-box px-4 py-2 shadow-lg">
+                            <div class="card-body">
+                                <p class="card-text text-success">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                            </div>
+                            <img src="./images/person1.png" class="card-img-top rounded-pill mx-auto" alt="Client Img">
+                            <h6 class="card-title text-secondary fw-semibold mt-2">Regina Miles</h6>
+                            <p class="text-success">Banker</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center client-review-box px-4 py-2 shadow-lg">
+                            <div class="card-body">
+                                <p class="card-text text-success">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                            </div>
+                            <img src="./images/person2.png" class="card-img-top rounded-pill mx-auto" alt="Client Img">
+                            <h6 class="card-title text-secondary fw-semibold mt-2">Jone Drake</h6>
+                            <p class="text-success">Banker</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center client-review-box px-4 py-2 shadow-lg">
+                            <div class="card-body">
+                                <p class="card-text text-success">Slate helps you see how
+                                    many more days you need
+                                    to work to reach your financial
+                                    goal for the month and year.</p>
+                            </div>
+                            <img src="./images/person3.png" class="card-img-top rounded-pill mx-auto" alt="Client Img">
+                            <h6 class="card-title text-secondary fw-semibold mt-2">Cret Yater</h6>
+                            <p class="text-success">Banker</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Client Review Section -->
+
+        <!-- Start Frequently Section -->
+        <section class="frequently-section">
+            <div class="section-title text-center mb-5 pb-4">
+                <h2 class="text-secondary fw-bold display-6 text-capitalize">Frequently Asked Questions</h2>
+            </div>
+            <div class="container">
+                <div class="row g-4 row-cols-1 row-cols-md-2 align-items-center flex-column-reverse flex-md-row">
+                    <div class="col">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What’s the difference between event design and event planning?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-danger">
+                                        <p>Event design and event planning work hand in hand to deliver a successful
+                                            event.Events by Knight offer tailor made events. This means we incorporate
+                                            both
+                                            event design and event planning to create that perfect event..</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button fw-medium collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        How early do we need to start planning an event
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-danger">
+                                        <p>Event design and event planning work hand in hand to deliver a successful
+                                            event.Events by Knight offer tailor made events. This means we incorporate
+                                            both
+                                            event design and event planning to create that perfect event..</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button fw-medium collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        What is your refund and cancellation policy?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-danger">
+                                        <p>Event design and event planning work hand in hand to deliver a successful
+                                            event.Events by Knight offer tailor made events. This means we incorporate
+                                            both
+                                            event design and event planning to create that perfect event..</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button fw-medium collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        How do you keep budgets on track?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-danger">
+                                        <p>Event design and event planning work hand in hand to deliver a successful
+                                            event.Events by Knight offer tailor made events. This means we incorporate
+                                            both
+                                            event design and event planning to create that perfect event..</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="accordion-img">
+                            <img src="./images/people.png" alt="Accordion img" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Frequently Section -->
+    </main>
+
+    <footer class="footer bg-secondary">
+        <div class="container py-5 my-5">
+            <div class="row row-cols-1">
+                <div class="footer-content d-flex align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="left-content">
+                        <p class="text-white">© 2020 bike. All rights reserved</p>
+                    </div>
+                    <div class="right-content">
+                        <h5 class="fw-normal text-white mb-3">Get the App</h5>
+                        <p><a href="#"><img src="./images/icons/app.png" alt="App logo"></a></p>
+                        <p><a href="#"><img src="./images/icons/google-icon.png" alt="App logo"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="./js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7431fa665d.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./js/custom.js"></script>
 </body>
+
 </html>

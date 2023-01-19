@@ -1,0 +1,111 @@
+section {
+  padding-top: 100px;
+}
+
+/* Header */
+.carousel-item {
+  background: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item1 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.87718837535014) 0%,
+      rgba(0, 0, 0, 0.5522584033613445) 50%,
+      rgba(0, 0, 0, 0.8603816526610644) 100%
+    ),
+    url(../images/carousel1.jpg);
+}
+.carousel-item2 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.87718837535014) 0%,
+      rgba(0, 0, 0, 0.5522584033613445) 50%,
+      rgba(0, 0, 0, 0.8603816526610644) 100%
+    ),
+    url(../images/carousel2.jpg);
+}
+.carousel-item3 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.87718837535014) 0%,
+      rgba(0, 0, 0, 0.5522584033613445) 50%,
+      rgba(0, 0, 0, 0.8603816526610644) 100%
+    ),
+    url(../images/carousel3.jpg);
+}
+.carousel-item4 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.87718837535014) 0%,
+      rgba(0, 0, 0, 0.5522584033613445) 50%,
+      rgba(0, 0, 0, 0.8603816526610644) 100%
+    ),
+    url(../images/carousel1.jpg);
+}
+.banner-text {
+  max-width: 40%;
+}
+
+/* Precious */
+.transition-5 {
+  transition: 0.5s ease-out;
+}
+.precious-toast {
+  top: 27%;
+  max-width: 270px;
+  width: auto;
+  right: -12%;
+}
+.precious-toast .btn-close {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.precious-toast {
+  display: none;
+}
+.precious-section:hover .precious-toast {
+  display: block;
+}
+
+/* Package */
+.package-boxes.active {
+  background: #3f87f5;
+  color: #fff !important;
+}
+.package-boxes.active .price,
+.package-boxes.active .card-title,
+.package-boxes.active .card-text,
+.package-boxes.package-boxes.active ul li,
+.package-boxes.active .btn {
+  color: #fff !important;
+}
+.package-boxes .card a:hover {
+  background: #fff !important;
+  color: #3f87f5 !important;
+}
+.package-boxes.active .btn {
+  background: #fff !important;
+  color: #3f87f5 !important;
+}
+
+/* Client Review */
+.client-review-box img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Frequently */
+.frequently-section .accordion-body {
+  font-family: "Inter";
+}
+.frequently-section .accordion-body p {
+  border: 1px solid #3f87f5;
+}
+.frequently-section .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.frequently-section .accordion-button:focus {
+  box-shadow: none;
+}
